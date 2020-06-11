@@ -1,0 +1,85 @@
+@font-face{
+    font-family: Poppins;
+    src: url(https://fonts.google.com/specimen/Poppins);
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(229, 6%, 66%);
+}
+.container, .header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 500px;
+    text-align: center;
+}
+.header, .title1{
+    font-size: 30px;
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 0px;
+}
+.header, .title2{
+    font-size: 30px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 5px 0px 0px 0px;
+    box-shadow: 0px 0px 12px 0px lightgrey;
+}
+.box, .title{
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-bottom: -5px;
+    margin-top: -5px;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+.team{
+    border-top-color: hsl(0, 78%, 62%);
+}
+.supervisor{
+    border-top-color: hsl(180, 62%, 55%);
+}
+.calculator{
+    border-top-color: hsl(212, 86%, 64%);
+}
+.karma{
+    border-top-color: hsl(34, 97%, 64%);
+    margin-top: 30px;
+}
+
+@media(max-width: 375px){
+    .header{width: 300px;}
+    .header, .title1{font-size: 24px;}
+    .boxes{flex-direction: column;}
+    .box{width: 250px;}
+}
